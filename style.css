@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+body {
+    min-width: 330px;
+}
+html,body {
+    font-size: 16px;
+}
+#base-intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./files/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+
+#menu {
+    width: 65vw;
+    padding: 1.5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu img {
+    width: 220px;
+    object-fit: cover;
+}
+
+#menu-buttons {
+    display: flex;
+    gap: .5rem;
+}
+
+#menu i{
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+#menu-buttons .menu-btn {
+    padding: .6rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+ 
+#menu-buttons .menu-btn:nth-child(2){
+    background-color: red;
+}
+
+
+
+
+#intro-page {
+    width: 65vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+#intro-page h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+#intro-text-content .intro-text {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+#intro-text-content .intro-text:nth-child(2) {
+    margin-top: 1rem;
+}
+
+
+#intro-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+width: 100%;
+}
+
+#intro-buttons button {
+    padding: .6rem 1.8rem;
+    background-color: red;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+    white-space: nowrap;
+}
+
+#intro-buttons input {
+    padding: .5rem .8rem;
+    width: 100%;
+    max-width: 350px;
+    min-width: 150px;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+#intro-buttons input::placeholder {
+    color: whitesmoke;
+    font-size: .8rem;
+    font-weight: 300;
+}
+
+
+
+.recommendation-content {
+background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-top: 5px solid rgb(48, 47, 47);
+    padding:3rem 0;
+}
+
+.video-title {
+    max-width: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.video-title h2 {
+    font-size: 2.5rem;
+
+}
+
+.video-title p {
+    font-size: 1rem;
+}
+.video-content {
+
+    position: relative;
+
+    height: 370px;
+
+}
+
+
+.video-content img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-content video {
+    position: absolute;
+    width: 366px;
+    left: 64;
+    top: 76;
+}
+
+.recommendation-content:nth-child(2) .video-title , .recommendation-content:nth-child(4) .video-title {
+    order: 2;
+}
+
+#faq-pages {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    padding:3rem 2rem;
+    border-top: 5px solid rgb(48, 47, 47);
+    
+}
+
+#faq-pages h2 {
+    font-size: 2rem;
+}
+.faq-content {
+    width: 100%;
+    max-width: 700px;
+    min-width: 320px;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.question-content {
+    background-color: rgb(48, 47, 47);
+    display: flex;
+    width: 100%;
+    padding: 1.5rem; 
+    justify-content: space-between;
+}
+
+.question-content span {
+    cursor: pointer;
+}
+
+#footer {
+     background-color: black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     color: white;
+     padding:3rem 2rem;
+     gap: 2rem;
+     border-top: 5px solid rgb(48, 47, 47);
+}
+
+#footer-links {
+    display: flex;
+    width: 100%;
+    max-width: 1020px;
+    justify-content: space-around;
+}
+.footer-link-content {
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+}
+
+.footer-link-content a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link-content a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        text-align: center;
+    }
+    .recommendation-content {
+        flex-direction: column;
+        }
+
+        #menu i {
+            display: block;
+        }
+
+        #menu-buttons {
+            display: none;
+        }
+        #menu img {
+            width: 150px
+        }
+
+
+}
+
+
+
+@media screen and (max-width: 550px) { 
+
+
+    html,body {
+        font-size: 13px;
+    } 
+
+    .recommendation-content {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        }
+    
+    .video-content img {
+        width: 320px;
+        object-fit: contain;
+
+    }
+    .video-content video {
+        position: absolute;
+        width: 250px;
+        left: 40;
+        top: 110;
+    }
+}
